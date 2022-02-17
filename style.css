@@ -1,0 +1,526 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto' ;
+    text-decoration: none;  
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 83, 111, 0.19);
+    color: #000000;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 50px;
+    line-height: 59px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 105px;
+}
+
+
+/************************Header************************/
+
+header { 
+    background-color: rgba(0, 4, 25, 0.57);
+    top: 0px;
+    position: fixed;
+    height: 63px;
+    width: 100%;
+    color: #FFFEFE;
+    z-index: 1;
+    transition: all 0.25s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+}
+
+/***Menu Navigation (a)***/
+nav{
+    display: flex;
+    gap: 6px;
+    margin-right: 28px;
+    padding-top: 20px;
+    color: #FFFEFE;
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: #FFFEFE;
+}
+
+
+/***Icone du header caché***/
+.icone-header{
+    visibility: hidden;
+}
+
+/***Critères des icones headers***/
+.icone-header p{
+    font-size: 35px;
+    line-height: 41px;
+}
+
+
+/**************Classe Header Ajoutée par Javascript**************/
+
+/***Icone header Affichée***/
+.icone-header.dl-header{
+    visibility: visible;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-left: 91px;
+    transition: 0.8s ease-in-out;
+}
+
+/***Zoom dl header***/
+.zoom-dl-header:hover {
+    transform: scale(1.3);
+}
+/***Changement fond header***/
+.navbar.scroll{
+    background : linear-gradient(90deg, #010005 0%, #03B4EF 12.36%, #010005 20.92%, #010005 36.75%, #03B4EF 46.76%, #010005 57.26%, #024F6C 66.79%, #03B4EF 78.91%, #010005 88.28%);
+}
+
+
+
+/************************Accueil************************/
+
+#accueil{
+    padding-top: 63px;
+    height: 762px;
+    background-image: url(image/galaxy_accueil.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFEFE;
+}
+
+/***Division Accueil (Titre/Download)***/
+.accueil{
+    border-left:  5px solid #FFFEFE;
+    margin-left: 280px;
+    margin-top: 204px;
+    padding-left: 46px ;
+}
+
+.accueil span{
+    font-size: 75px;
+    line-height: 88px;
+}
+
+
+/***Division Bouton ***/
+.bouton{
+    display: flex;
+    flex-direction: row;
+    margin-top: 29px;
+    width: 306px;
+    height: 46px;
+}
+/***Paragraphe Bouton ***/
+.download{
+    font-weight: 700;
+    font-size: 20px;
+    width: 306px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding-left: 16px;
+}
+
+/***Critère boite image ***/
+.dl{
+    width: 32px;
+    height: 34px;
+    position: relative;
+    display: inline-block;
+    
+}
+
+/***Image Download noir Cachée ***/
+.bouton .img-survol{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+}
+
+/***Image Download noir Affichée ***/
+.bouton:hover .img-survol{
+    display: inline;
+    background-color: #FFFEFE;
+    z-index: 99;
+}
+
+/***Bouton style Affiché ***/
+.bouton:hover .download{
+    background-color: #FFFEFE;
+    color: black;
+    border-radius: 4px;
+}
+
+
+/************************A propos************************/
+
+/***Titre A Propos ***/
+.apropos{
+    text-align: left;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 82px;
+    margin-left: 195px;
+    margin-top: 60px;
+}
+
+/***Description + Photo ***/
+
+.profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 94px;
+}
+
+.description{
+    width: 713px;
+    height: 205px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+}
+
+/***Tableau***/
+
+.tableau{
+    display: flex;
+    justify-content: center;
+    margin-top: 37px;
+    gap: 140px;
+}
+
+/***Colonne***/
+td{
+    padding-top: 29px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #03B3EE;
+}
+
+/***Critères du linked et mail ***/
+.linked, .icone-mail{
+    margin-bottom: -10px;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+/***Zoom du Linked Doré et mail***/
+.linked:hover , .icone-mail:hover{
+    transform: scale(1.15);
+}
+
+
+/************************Compétences************************/
+
+/***Disposition Compétences***/
+.haut , .bas{
+    display: flex;
+    justify-content: center;
+    gap: 118px;
+
+}
+
+.haut{
+    margin-top: 50px;
+}
+.bas{
+    margin-top: 65px;
+}
+
+/***Titres des compétences***/
+h3{
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 400;
+}
+
+/***Critères Boites des Compétences***/
+.cube{
+    background-color: #FFFFFF;
+    width: 290px;
+    height: 216px;
+    text-align: center;
+    border: 4px solid #FFFFFF;
+}
+
+.cube img{
+    margin-top: 20px;
+}
+
+.cube h3{
+    margin-bottom: 18px;
+}
+
+.cube p {
+    line-height: 25px;
+}
+
+
+.cube:hover {
+    border: 4px solid #03B3EE;
+}
+
+
+/************************Diplômes************************/
+
+/***Titre de la section***/
+#diplome h2{
+    margin-bottom: 40px;
+}
+
+/***Critères Div boites Diplômes***/
+.boite-diplome{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 30px;
+}
+
+/***Critères Boites Diplômes***/
+.rectangle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    width: 1132px;
+    height: 119px;
+    transition: 0.3s ease-in-out;
+}
+
+.rectangle:hover{
+    box-shadow:  0 0 0.6em 0.4em #03B3EE;
+}
+.rectangle span{
+    font-weight: 700;
+    font-style: italic;
+}
+/************************Expérience Professionnelle************************/
+
+/***Taille de la section***/
+#xpro{
+    height: 800px;
+}
+/***Titre de la section***/
+#xpro h2{
+    margin-bottom: 20px;
+}
+
+/***Critères Div boites Exp Pro***/
+.boite-xpro{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/***Critères Boites Exp Pro***/
+.rectangle-xpro{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    width: 1132px;
+    height: 119px;
+}
+
+.rectangle-xpro:hover{
+    visibility: hidden;
+}
+
+/***Critère boite texte ***/
+.txt{
+    width: 1092px;
+    height: 119px;
+    position: relative;
+    display: inline-block;  
+} 
+
+.txt p {
+    padding-top: 15px;
+}
+
+/***Texte Descriptif Job Cachée ***/
+.txt-survol{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 0px 35px  ;
+}
+
+/***Texte Descriptif Job Affiché ***/
+ .txt:hover .txt-survol{
+    display: inline;
+    visibility: visible;
+    background-color: rgba(3, 179, 238, 0.6);
+    color: #FFFFFF;    
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px 15px;
+    border: solid 4px #FFFFFF;
+}  
+
+/************************Contact************************/
+
+/***Critères de la section***/
+#contact{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(image/cadenat_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/***Titre de la section + copyright***/
+#contact h2{
+    color: #FFFEFE;
+    margin-top: 59px;
+}
+
+
+/***Sous-titre de la section***/
+h4{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFBD03;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+
+
+/***Disposition Formulaire***/
+form{
+    width: 705px;
+    height: 338px;
+    background-color: rgba(196, 196, 196, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+/***Critères des boites du formulaire***/
+form input, form textarea{
+    width: 602px;
+    height: 49px;
+    background-color: #CFDEE4;
+    font-size: 20px;
+    border: none;
+    outline: none; /*Contour au clique comme bordure*/
+}
+
+/***Redimensionnement textarea en ligne***/
+form textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+
+/***Critères des zones d'écrit du formulaire***/
+input::placeholder, textarea::placeholder {
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000CC;
+}
+
+/*** Bouton du formulaire***/
+.button-form{
+    width: 399px;
+    height: 38px;
+    font-size: 25px;
+    line-height: 29px;
+    background-color: rgba(227, 187, 75, 0.8);
+}
+
+.button-form:hover{
+    background-color: #E3BB4B;
+}
+.nom, .email {
+    margin-bottom: 22px;
+}
+
+.nom {
+    margin-top: 50px;
+}
+
+.message{
+    margin-bottom: 30px;
+}
+/************************Footer************************/
+
+/*** Critères de la section ***/
+footer{
+    color: #FFFEFE;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+/*** Menu du Footer ***/
+footer{
+    bottom: 0px;
+}
+.menu{
+    font-size: 20px;
+    line-height: 23px;
+}
+
+/*** Div Footer ***/
+footer div{
+    width: 100%;
+}
+footer p {
+    padding-left: 37px;
+}
+
+.mentions{
+    text-decoration: underline;
+}
+
+/*** Icone Footer ***/
+.icone-foot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-right: 37px;
+
+}
+
+/*** Zoom Icone Footer ***/
+.icone-footer{
+transition: 0.3s ease-in-out;
+}
+
+/***Zoom Icone Footer***/
+.icone-footer:hover {
+    transform: scale(1.15);
+}

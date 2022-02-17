@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto' ;
+    text-decoration: none;
+    color: white;  
+}
+
+section{
+    height: 762px;
+    background-image: url(fond_non_volant.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+/***Votre message + Merci***/
+.boite1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 808px;
+    height: 287px;
+    align-self: center;
+    gap: 114px;
+}
+
+/***Bouton retourner***/
+.boite2{
+    width: 433px;
+    height: 84px;
+    align-self: flex-end;
+    margin-right: 40px;
+}
+
+/***Votre message c'est bien envoyer.***/
+p{
+    font-size: 50px;
+    line-height: 59px;
+}
+
+/***Merci !***/
+h1{
+    font-size: 90px;
+    line-height: 105px;
+}
+
+.boite2 a{
+    display: flex;
+    justify-content: space-between;
+
+}
+/***Retourner sur le site***/
+a{
+    font-size: 40px;
+    line-height: 47px;
+    transition: 0.4s ease-in-out;
+}
+
+/***Zoom a***/
+.retour:hover {
+    transform: scale(1.06);
+}
